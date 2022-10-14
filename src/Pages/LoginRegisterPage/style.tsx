@@ -145,7 +145,6 @@ export const Input = styled.input`
     background-color: ${props => props.theme.colors.signInUpPage_BackgroundInput};
     border: none;
     padding: 12px 15px;
-    margin: 8px 0;
     width: 100%;
     color: ${props => props.theme.colors.signInUpPage_TextInput};
 `;

@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { InputMessage } from '../InputMessage';
+import { Messages } from '../Messages';
 import {
     ChatContainerDiv,
     ChatInfoContainerDiv,
@@ -25,6 +27,8 @@ export function Chat() {
                         <ChatInfoOverlayContainer toogleChatMedia={toogleChatMedia} />
                     </ChatInfoBoxDiv>
                 </ChatInfoContainerDiv>
+                <Messages />
+                <InputMessage />
             </ChatContainerDiv>
         </>
     )
