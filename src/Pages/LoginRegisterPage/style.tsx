@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { LoginRegisterProps } from './index';
 
 export const LoginRegisterPageContainer = styled.div`
-    background: var(--purpleLight200);
+    background: ${props => props.theme.colors.signInUpPage_Background};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@ export const LoginRegisterPageContainer = styled.div`
 `;
 
 export const SignUpSignInContainer = styled.div`
-    background-color: var(--white);
+    background-color: ${props => props.theme.colors.signInUpPage_BackgroundCard};
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
@@ -37,6 +37,7 @@ export const SignUpContainer = styled.div<LoginRegisterProps>`
     width: 50%;
     opacity: 0;
     z-index: 1;
+    color: ${props => props.theme.colors.signInUpPage_TextFrom};
 
     @media only screen and (max-width: 700px){
         width: 100%;
@@ -93,6 +94,7 @@ export const SignInContainer = styled.div<LoginRegisterProps>`
     left: 0;
     width: 50%;
     z-index: 2;
+    color: ${props => props.theme.colors.signInUpPage_TextFrom};
 
     @media only screen and (max-width: 700px){
         width: 100%;
@@ -118,7 +120,7 @@ export const SignInContainer = styled.div<LoginRegisterProps>`
 `;
 
 export const Form = styled.div`
-    background-color: var(--white);
+    background-color: ${props => props.theme.colors.signInUpPage_BackgroundCard};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,18 +142,19 @@ export const Title = styled.h1`
 `;
 
 export const Input = styled.input`
-    background-color: var(--grayLight);
+    background-color: ${props => props.theme.colors.signInUpPage_BackgroundInput};
     border: none;
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
+    color: ${props => props.theme.colors.signInUpPage_TextInput};
 `;
 
 export const Button = styled.button`
     border-radius: 20px;
-    border: 1px solid var(--purple);
-    background-color: var(--purple);
-    color: var(--white);
+    border: 1px solid ${props => props.theme.colors.purple600};
+    background-color: ${props => props.theme.colors.purple600};
+    color: ${props => props.theme.colors.white};
     font-size: 12px;
     margin-top: 20px;
     font-weight: bold;
@@ -170,7 +173,7 @@ export const Button = styled.button`
 `;
 export const GhostButton = styled(Button)`
     background-color: transparent;
-    border-color: var(--white);
+    border-color: ${props => props.theme.colors.white};
 `;
 
 export const OverlayContainer = styled.div<LoginRegisterProps>`
@@ -206,12 +209,12 @@ export const OverlayContainer = styled.div<LoginRegisterProps>`
 `;
 
 export const Overlay = styled.div<LoginRegisterProps>`
-    background: var(--purple);
-    background: linear-gradient(to right, var(--blueDark), var(--purple));
+    background: ${props => props.theme.colors.purple600};
+    background: linear-gradient(to right, ${props => props.theme.colors.blue700}, ${props => props.theme.colors.purple600});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
-    color: var(--white);
+    color: ${props => props.theme.colors.white};
     position: relative;
     left: -100%;
     height: 100%;
