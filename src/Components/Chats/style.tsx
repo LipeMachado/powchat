@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ChatsCardBoxDiv = styled.div`
     width: 100%;
-    height: 50px;
+    height: 55px;
     box-shadow: 0px 8px 40px rgba(121, 35, 207, 0.3);
     border-radius: 14px;
     background-color: ${props => props.theme.colors.purple600};

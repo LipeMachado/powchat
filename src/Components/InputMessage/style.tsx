@@ -7,3 +7,15 @@ export const InputMessageContainerDiv = styled.div`
     display: flex;
     align-items: center;
 `;
+
+export const InputMessageInput = styled.input`
+
+`;
+
+export const InputMessageButtonDiv = styled.div`
+
+`;
+
+export const InputMessageSendButton = styled.div`
+
+`;
