@@ -27,5 +27,21 @@ export default {
         //SideBar - Component
         sideBar_Background: '#121214',
         sideBar_BorderImages: '#7923CF',
+
+        //InputMessage - Component
+        inputMessage_BorderColor: '#6B6B6B',
+        inputMessage_TextBackground: '#000000',
+        inputMessage_BackgroundButtonSend: '#7923CF',
+        inputMessage_TextButtonSend: '#ffffff',
+        inputMessage_BackgroundSVGOptions: '#7923CF',
+        inputMessage_ColorHovevrSVGOptions: '#ffffff',
+
+        //Message - Component
+        message_TextTimeSendMessage: '#6B6B6B',
+        message_BackgroundColorParagraph: '#f3f1f5',
+        message_TextColorParagraph: '#000000',
+        message_BorderImageProfile: '#7923CF',
+        message_BackgroundColorParagraphOwner: '#7923CF',
+        message_TextColorParagraphOwner: '#ffffff',
     },
 }

@@ -30,6 +30,23 @@ declare module 'styled-components' {
             //SideBar - Component
             sideBar_Background: string,
             sideBar_BorderImages: string,
+
+            //InputMessage - Component
+            inputMessage_BorderColor: string,
+            inputMessage_TextBackground: string,
+            inputMessage_BackgroundButtonSend: string,
+            inputMessage_TextButtonSend: string,
+            inputMessage_BackgroundButtonSendHover: string,
+            inputMessage_BackgroundSVGOptions: string,
+            inputMessage_ColorHovevrSVGOptions: string,
+
+            //Message - Component
+            message_TextTimeSendMessage: string,
+            message_BackgroundColorParagraph: string,
+            message_BackgroundColorParagraphOwner: string,
+            message_TextColorParagraphOwner: string,
+            message_TextColorParagraph: string,
+            message_BorderImageProfile: string,
         },
     }
 }
